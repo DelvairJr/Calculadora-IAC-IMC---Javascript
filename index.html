@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho Prático</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+	<input type="radio" id="radioImc" name="calculo" checked>
+	<label for="radioImc" id="lbImc">IMC</label>
+	<input type="radio" id="radioIac" name="calculo">
+	<label for="radioIac" id="lbIac">IAC</label>
+
+	<section id="contImc">
+		<div class="sub_cont1">
+            <form>
+                <div class="d1">	
+                    <label>Altura</label>
+                    <input type="text" name="altura" id="alturaImc" placeholder="00.00" autocomplete="off">
+                </div>
+
+                <div class="d2">		
+                    <label>Peso</label>
+                    <input type="text" name="peso" id="pesoImc" placeholder="00.00" autocomplete="off">
+                </div>
+
+                <button id="btn_CalcImc">Calcular</button>
+            </form>
+		</div>
+		<!-- 2º Bloco Imc -->
+		<div class="sub_cont2">
+			
+			<output id="resultadoImc">Resultado: 00.00 Kg/m²</output>
+
+			<table id="tbImc" border="1">
+	            <thead>
+	                <tr>
+	                    <th>IMC</th>
+	                    <th>Classificação</th>
+	                </tr>
+	        	</thead>
+	            <tbody>
+	                <tr id="imcMg">
+	                    <td>até 16</td>
+	                     <td>Magreza Grave</td>
+	                </tr>
+	                <tr id="imcMm">
+	                    <td>16 a 16.99</td>
+	                    <td>Magreza Moderada</td>
+	                </tr>
+	                <tr id="imcMl" >
+	                    <td>17 a 18.49</td>
+	                    <td>Magreza Leve</td>
+	                </tr>
+	                <tr id="imcS">
+	                    <td>18.50 a 24.99</td>
+	                    <td>Saudável</td>
+	                </tr>
+	                <tr id="imcSp">
+	                    <td>25 a 29.99</td>
+	                    <td>Sobrepeso</td>
+	                </tr>
+	                <tr id="imcOg">
+	                    <td>30 a 34.99</td>
+	                    <td>Obesidade Grau I</td>
+	                </tr>
+	                <tr id="imcOs" >
+	                    <td>35 a 39.99</td>
+	                    <td>Obesidade Grau 2(Severa)</td>
+	                </tr>
+	                <tr id="imcOm">
+	                    <td>Maior que 40</td>
+	                    <td>Obesidade Grau 3(Mórbida)</td>
+	                </tr>
+	                        
+	            </tbody>
+	        </table>		
+		</div>
+	</section>
+
+		
+
+	<section id="contIac">
+		<div class="sub_cont1">
+           <form>
+                <div class="d1">
+                    <label>Altura</label>
+                    <input type="text" name="altura" id="alturaIac" placeholder="00.00" autocomplete="off">
+                </div>
+
+                <div class="d2">
+                    <label>Quadril</label>
+                    <input type="text" name="quadril" id="quadrilIac" placeholder="00.00" autocomplete="off">
+                </div>
+
+                <input type="radio" id="rbMasc" name="sexo">Masculino
+                <input type="radio"  id="rbFem" name="sexo">Feminino
+
+                <button id="btn_CalcIac">Calcular</button>
+            </form>
+        </div>
+        <!-- 2ºBloco Iac -->
+        <div class="sub_cont2">
+        
+            <output id="resultadoIac">Resultado: 00.00%</output>
+            
+            <table id="tbHomem" border="1">
+	            <thead>
+	                <tr>
+		                <th colspan="2">
+		                    Homem
+		                </th>                    		
+	                </tr>
+	                <tr>
+	                    <th>IAC</th>
+	                    <th>Classificação</th>
+	                </tr>
+				</thead>
+	            <tbody>
+	                <tr id="tbH1a">
+	                    <td>Menor que 6%</td>
+	                    <td>Trágico</td>
+	                </tr>
+	                <tr id="tbH2a">
+	                    <td>6% a 10.99%</td>
+	                    <td>Especialmente Baixa</td>
+	                </tr>
+	                <tr id="tbH3a">
+	                    <td>11% a 14.99%</td>
+	                    <td>Baixa</td>
+	                </tr>
+	                <tr id="tbH4a">
+	                    <td>15% a 18.99%</td>
+	                    <td>Ideal</td>
+	                </tr>
+	                <tr id="tbH5a">
+	                    <td>19% a 23.99%</td>
+	                    <td>Moderada</td>
+	                </tr>
+	                <tr id="tbH6a">
+	                    <td>Maior que 24%</td>
+	                    <td>Excesso de gordura</td>
+	                </tr>
+	            </tbody>
+	        </table>
+                
+            <table id="tbMulher" border="1">
+	            <thead>
+	                <tr>
+		                <th colspan="2">
+		                    Mulher
+		                </th>                    		
+	                </tr>
+	                <tr>
+	                    <th>IAC</th>
+	                    <th>Classificação</th>
+	                </tr>
+				</thead>
+	            <tbody>
+	                <tr id="tbM1a">
+	                    <td>Menor que 10%</td>
+	                    <td>Trágico</td>
+	                </tr>
+	                <tr id="tbM2a">
+	                    <td>10% a 15.99%</td>
+	                    <td>Especialmente Baixa</td>
+	                </tr>
+	                <tr id="tbM3a">
+	                    <td>16% a 19.99%</td>
+	                    <td>Baixa</td>
+	                </tr>
+	                <tr id="tbM4a">
+	                    <td>20% a 25.99%</td>
+	                    <td>Ideal</td>
+	                </tr>
+	                <tr id="tbM5a">
+	                    <td>26% a 29.99%</td>
+	                    <td>Moderada</td>
+	                </tr>
+	                <tr id="tbM6a">
+	                    <td>Maior que 30%</td>
+	                    <td>Excesso de gordura</td>
+	                </tr>
+	            </tbody>
+	        </table> 
+            
+            
+        </div>
+	</section>
+
+	<script type="text/javascript" src="javaScript/script.js"></script>
+
+</body>
+</html>
